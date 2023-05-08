@@ -20,42 +20,26 @@ export const Home = (props) => {
         {
             id: 2,
             nome: 'Febre Amarela',
-            data: '05/10/2022',
+            data: '11/10/2022',
             dose: '1a. dose',
             comprovante: 'file:///data/user/0/com.myhealth/cache/rn_image_picker_lib_temp_2aab7aa3-4ddf-4c13-8dd8-9d4c3fcebda6.jpg',
             proxima: '11/10/2023'
         },
         {
             id: 3,
-            nome: 'Covid 19',
-            data: '05/10/2022',
+            nome: 'Hepatite B',
+            data: '11/08/2022',
             dose: '1a. dose',
             comprovante: 'file:///data/user/0/com.myhealth/cache/rn_image_picker_lib_temp_2aab7aa3-4ddf-4c13-8dd8-9d4c3fcebda6.jpg',
-            proxima: '11/10/2023'
+            proxima: '11/10/2022'
         },
         {
             id: 4,
-            nome: 'Dengue',
-            data: '05/10/2022',
+            nome: 'Poliomelite',
+            data: '11/08/2022',
             dose: '1a. dose',
             comprovante: 'file:///data/user/0/com.myhealth/cache/rn_image_picker_lib_temp_2aab7aa3-4ddf-4c13-8dd8-9d4c3fcebda6.jpg',
-            proxima: '11/10/2023'
-        },
-        {
-            id: 5,
-            nome: 'Outra Vacina',
-            data: '05/10/2022',
-            dose: '1a. dose',
-            comprovante: 'file:///data/user/0/com.myhealth/cache/rn_image_picker_lib_temp_2aab7aa3-4ddf-4c13-8dd8-9d4c3fcebda6.jpg',
-            proxima: '11/10/2023'
-        },
-        {
-            id: 6,
-            nome: 'Mais uma',
-            data: '05/10/2022',
-            dose: '1a. dose',
-            comprovante: 'file:///data/user/0/com.myhealth/cache/rn_image_picker_lib_temp_2aab7aa3-4ddf-4c13-8dd8-9d4c3fcebda6.jpg',
-            proxima: '11/10/2023'
+            proxima: '11/10/2022'
         },
 
     ]
@@ -115,10 +99,8 @@ export const Home = (props) => {
                 <FlatList data={vacinas} renderItem={({ item }) => <Card item={item} navigation={props.navigation} />} keyExtractor={item => item.id} numColumns={2} />
             </ScrollView>
 
-            <TouchableOpacity onPress={showNovaVacina}>
-                <Text style={[styles.btnNovaVacina, styles.shadow]}>
-                    Nova Vacina
-                </Text>
+            <TouchableOpacity style={styles.btnNovaVacina} onPress={showNovaVacina}>
+                <Text style={styles.letra}>Nova Vacina</Text>
             </TouchableOpacity>
         </ScrollView>
     );

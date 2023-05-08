@@ -14,9 +14,9 @@ export const CustomDrawer = (props) => {
             <UserHeader />
             <DrawerItemList {...props} />
             <View style={{ flexDirection: 'row', marginLeft: 18 }}>
-                <Image source={require('../../assets/imgs/sair.png')} style={{ height: 40, width: 40 }} />
+                <Image source={require('../../assets/imgs/saindo.png')} style={{ height: 40, width: 40 }} />
                 <TouchableOpacity onPress={sair}>
-                    <Text style={{ color: 'black', paddingTop: 10, marginLeft: 28, fontSize: 15 }}>
+                    <Text style={{ color: '#419ED7', paddingTop: 10, marginLeft: 28, fontSize: 15 }}>
                         Sair
                     </Text>
                 </TouchableOpacity>

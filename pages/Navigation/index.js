@@ -22,25 +22,25 @@ const HomeNavigator = () => {
         name="Minhas Vacinas"
         component={Home}
         options={{
-          drawerIcon: () => <Image source={require('../../assets/imgs/vacina.png')} style={{ height: '120%', width: '15%' }} />,
+          drawerIcon: () => <Image source={require('../../assets/imgs/agulha.png')} style={{ height: '120%', width: '15%' }} />,
           headerStyle: { backgroundColor: '#c0e7e2' },
-          drawerActiveTintColor: "black",
+          drawerActiveTintColor: '#419ED7',
           drawerInactiveTintColor: "#429ed7",
           headerTintColor: '#add4d1',
-          headerTitleStyle: { fontWeight: 'bold', fontSize: 30, color: '#429ed5' },
+          headerTitleStyle: { fontWeight: 'bold', fontSize: 30, color: '#419ED7' },
         }} />
 
       <Drawer.Screen name="Próximas Vacinas" component={ProximaVacina} options={{
-        drawerIcon: () => <Image source={require('../../assets/imgs/calendario.png')} style={{ height: '120%', width: '15%' }} />,
+        drawerIcon: () => <Image source={require('../../assets/imgs/calen.png')} style={{ height: '120%', width: '15%' }} />,
         headerStyle: { backgroundColor: '#c0e7e2' },
-        drawerActiveTintColor: "black",
+        drawerActiveTintColor: '#419ED7',
         drawerInactiveTintColor: "#429ed7",
         headerTintColor: '#add4d1',
         headerTitleStyle: { fontWeight: 'bold', fontSize: 30, color: '#429ed5' },
       }} />
 
       <Drawer.Screen name="Nova Vacina" component={NovaVacina} options={{
-        title: "Minhas Vacinas",
+        title: "Nova vacina",
         drawerItemStyle: { height: 0 },
         headerStyle: { backgroundColor: '#c0e7e2' },
         headerTintColor: '#add4d1',
@@ -48,7 +48,7 @@ const HomeNavigator = () => {
       }} />
 
       <Drawer.Screen name="Editar Vacina" component={EditarVacina} options={{
-        title: "Minhas Vacinas",
+        title: "Editar vacina",
         drawerItemStyle: { height: 0 },
         headerStyle: { backgroundColor: '#c0e7e2' },
         headerTintColor: '#add4d1',
@@ -75,7 +75,7 @@ const Navigation = () => {
             {
               title: 'Login',
               headerStyle: { backgroundColor: '#c0e7e2' },
-              headerTintColor: 'white',
+              headerTintColor: '#ADD4D0',
               headerTitleStyle: { fontWeight: 'bold', fontSize: 30, color: '#429ed5' },
               headerShown: false
             }} />
@@ -85,9 +85,9 @@ const Navigation = () => {
         <Stack.Screen name="Criar Conta" component={CriarConta}
           options={
             {
-              title: 'MyHealth',
+              title: 'Nova Conta',
               headerStyle: { backgroundColor: '#c0e7e2' },
-              headerTintColor: 'white',
+              headerTintColor: '#ADD4D0',
               headerTitleStyle: { fontWeight: 'bold', fontSize: 30, color: '#429ed5' },
             }} />
 
@@ -96,10 +96,18 @@ const Navigation = () => {
             {
               title: 'MyHealth',
               headerStyle: { backgroundColor: '#c0e7e2' },
-              headerTintColor: 'white',
+              headerTintColor: '#ADD4D0',
               headerTitleStyle: { fontWeight: 'bold', fontSize: 30, color: '#429ed5' },
             }} />
 
+        <Stack.Screen name="Ed Senha" component={RecuperarSenha}
+          options={
+            {
+              title: 'MyHealth',
+              headerStyle: { backgroundColor: '#c0e7e2' },
+              headerTintColor: '#ADD4D0',
+              headerTitleStyle: { fontWeight: 'bold', fontSize: 30, color: '#429ed5' },
+            }} />
       </Stack.Navigator>
     </NavigationContainer>
 

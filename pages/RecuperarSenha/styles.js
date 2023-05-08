@@ -9,7 +9,7 @@ export default StyleSheet.create({
     },
     container: {
         flexDirection: 'row',
-        
+
     },
     label: {
         textAlignVertical: 'center',
@@ -24,24 +24,17 @@ export default StyleSheet.create({
         color: '#499dcd'
     },
     btnRecuperar: {
-        marginTop: 120,
-        backgroundColor: 'green',
+        marginTop: 250,
+        backgroundColor: '#37BD6D',
         textAlign: 'center',
         paddingVertical: 10,
         paddingHorizontal: 32,
         width: 220,
+        borderRadius: 10
+    },
+    letra: {
         color: 'white',
         fontSize: 20,
-        shadowColor: 'black',
-    },
-    sombra: {
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 5,
-        },
-        shadowOpacity: 0.5,
-        shadowRadius: 7,
-        elevation: 15,
+        alignItems: 'center'
     }
 });

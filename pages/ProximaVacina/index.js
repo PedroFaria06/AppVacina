@@ -32,10 +32,8 @@ export const ProximaVacina = (props) => {
             <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
                 <FlatList data={listaVacinas} renderItem={({ item }) => <CardProximaVacina item={item} navigation={props.navigation} />} keyExtractor={item => item.id} numColumns={1} />
             </View>
-            <TouchableOpacity onPress={showNovaVacina}>
-                <Text style={[styles.btnNovaVacina, styles.shadow]}>
-                    Nova Vacina
-                </Text>
+            <TouchableOpacity style={styles.btnNovaVacina} onPress={showNovaVacina}>
+                <Text style={styles.letra}>Nova Vacina</Text>
             </TouchableOpacity>
         </View>
     );

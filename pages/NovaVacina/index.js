@@ -49,7 +49,7 @@ export const NovaVacina = (props) => {
             <View>
 
                 <View style={styles.container}>
-                    <Text style={styles.label}>Próxima Vacinação</Text>
+                    <Text style={styles.label}>Data de Vacinação</Text>
                     <MaskInput
                         style={styles.input}
                         value={dataVacina}
@@ -112,9 +112,7 @@ export const NovaVacina = (props) => {
 
                     <View style={styles.containerImagem}>
                         <TouchableOpacity onPress={() => selecionarComprovante()}>
-                            <Text style={[styles.btnComprovante, styles.sombra]}>
-                                Selecionar Imagem
-                            </Text>
+                            <Text style={[styles.btnComprovante, styles.sombra]}>Selecionar Imagem</Text>
                         </TouchableOpacity>
                         {
                             (comprovante != '')
@@ -141,10 +139,8 @@ export const NovaVacina = (props) => {
 
             </View>
 
-            <TouchableOpacity onPress={novaVacina}>
-                <Text style={[styles.btnCadastrar, styles.sombra]}>
-                    Cadastrar
-                </Text>
+            <TouchableOpacity style={styles.btnCadastrar} onPress={novaVacina}>
+                <Text style={styles.letra}>Cadastrar</Text>
             </TouchableOpacity>
 
         </View>

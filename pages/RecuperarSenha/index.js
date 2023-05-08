@@ -16,10 +16,8 @@ export const RecuperarSenha = (props) => {
                 <Text style={styles.label}>Email</Text>
                 <TextInput style={styles.input} value={email} onChangeText={setEmail} />
             </View>
-            <TouchableOpacity onPress={showLogin}>
-                <Text style={[styles.btnRecuperar, styles.sombra]} >
-                    Recuperar Senha
-                </Text>
+            <TouchableOpacity style={styles.btnRecuperar} onPress={showLogin}>
+                <Text style={styles.letra} >Recuperar Senha</Text>
             </TouchableOpacity>
         </View>
     );

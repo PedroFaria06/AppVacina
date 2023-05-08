@@ -21,18 +21,20 @@ export const Login = (props) => {
     return (
         <View style={styles.background}>
 
-            <ImageBackground source={require('../../assets/imgs/fundo.jpg')} resizeMode="cover" style={styles.image} />
+            <ImageBackground source={require('../../assets/imgs/topo.jpg')} resizeMode="cover" style={styles.image} />
+            <View style={styles.Titulos}>
+                <View style={styles.titulo}>
+                    <Image source={require('../../assets/imgs/agulha.png')} style={{ height: '60%', width: 50, marginTop: 30, }} />
+                    <Text style={styles.title}>MyHealth</Text>
+                </View>
+                <View>
+                    <Text style={styles.description}>Controle as suas vacinas e fique seguro</Text>
+                </View>
+            </View>
 
-            <View style={styles.titulo}>
-                <Image source={require('../../assets/imgs/vacina.png')} style={{ height: '60%', width: 50, marginTop: 30, marginRight: 20 }} />
-                <Text style={styles.title}>My Health</Text>
-            </View>
-            <View>
-                <Text style={styles.description}>Controle as suas vacinas e fique seguro</Text>
-            </View>
-            <View>
+            <View style={styles.inputs}>
                 <View style={styles.container}>
-                    <Text style={styles.label}>Email</Text>
+                    <Text style={styles.label}>E-mail</Text>
                     <TextInput style={styles.input} value={email} onChangeText={setEmail} />
                 </View>
                 <View style={styles.container}>
@@ -41,20 +43,14 @@ export const Login = (props) => {
                 </View>
             </View>
             <View style={styles.btnContainer}>
-                <TouchableOpacity onPress={showHome}>
-                    <Text style={[styles.btnEntrar, styles.shadow]}>
-                        Entrar
-                    </Text>
+                <TouchableOpacity style={styles.btnEntrar} onPress={showHome}>
+                    <Text style={styles.letra}>Entrar</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={showCriarConta}>
-                    <Text style={[styles.btnCriar, styles.shadow]}>
-                        Criar minha conta
-                    </Text>
+                <TouchableOpacity style={styles.btnCriar} onPress={showCriarConta}>
+                    <Text style={styles.letra}>Criar minha conta</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={showRecuperarSenha}>
-                    <Text style={[styles.btnEsqueci, styles.shadow]}>
-                        Esqueci minha senha
-                    </Text>
+                <TouchableOpacity style={styles.btnEsqueci} onPress={showRecuperarSenha}>
+                    <Text style={styles.letra}>Esqueci minha senha</Text>
                 </TouchableOpacity>
             </View>
         </View>

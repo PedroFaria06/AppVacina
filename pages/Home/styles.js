@@ -14,16 +14,12 @@ export default StyleSheet.create({
         textDecorationLine: 'underline'
     },
     btnNovaVacina: {
-        backgroundColor: 'green',
+        backgroundColor: '#37BD6D',
         textAlign: 'center',
         paddingVertical: 10,
         width: 180,
-        color: 'white',
-        marginTop: 20,
-        marginBottom: 20,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        fontSize: 20,
+        marginLeft: 100,
+        borderRadius: 10,
     },
     srcBar: {
         width: '95%',
@@ -31,5 +27,10 @@ export default StyleSheet.create({
         marginRight: 'auto',
         marginTop: 20,
         marginBottom: 20,
+    },
+    letra: {
+        color: 'white',
+        fontSize: 20,
+        textAlign: 'center',
     }
 });

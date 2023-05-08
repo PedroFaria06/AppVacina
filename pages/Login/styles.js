@@ -10,23 +10,30 @@ export default StyleSheet.create({
         textAlign: 'center',
         fontSize: 40,
         marginTop: 30,
-        color: '#429ed7',
+        color: '#419ED7',
         fontWeight: 'bold',
-        textDecorationLine: 'underline'
+        textDecorationLine: 'underline',
+        paddingLeft: 5
+
+    },
+    Titulos: {
+        flex: 50
     },
     description: {
         color: '#429ed7',
         fontSize: 30,
         width: 350,
         textAlign: 'center',
-        marginTop: 30,
+        marginTop: 70,
         marginBottom: 30,
         marginLeft: 'auto',
         marginRight: 'auto',
     },
+    inputs: {
+        flex: 20
+    },
     container: {
         flexDirection: 'row',
-        marginBottom: 20,
         marginTop: 20
     },
     label: {
@@ -46,69 +53,59 @@ export default StyleSheet.create({
     btnContainer: {
         alignItems: 'center',
         justifyContent: 'center',
+        flex: 60
     },
     btnEntrar: {
-        backgroundColor: 'green',
+        backgroundColor: '#37BD6D',
         textAlign: 'center',
         paddingVertical: 10,
-        paddingHorizontal: 32,
+        paddingHorizontal: 45,
         width: 150,
-        color: 'white',
         marginTop: 20,
         marginBottom: 20,
         marginLeft: 'auto',
         marginRight: 'auto',
-        fontSize: 20,
-        shadowColor: 'black',
+        borderRadius: 10
     },
     btnCriar: {
-        backgroundColor: '#429ed7',
+        backgroundColor: '#419ED7',
         textAlign: 'center',
         paddingVertical: 10,
-        paddingHorizontal: 32,
+        paddingHorizontal: 40,
         width: 250,
-        color: 'white',
         marginTop: 20,
-        marginBottom: 20,
+        marginBottom: 10,
         marginLeft: 'auto',
         marginRight: 'auto',
-        fontSize: 20
+        borderRadius: 10
     },
     btnEsqueci: {
-        backgroundColor: '#505050',
+        backgroundColor: '#B0CCDE',
         textAlign: 'center',
         paddingVertical: 10,
-        paddingHorizontal: 32,
+        paddingHorizontal: 40,
         width: 270,
-        color: 'white',
-        shadowColor: 'black',
         marginTop: 20,
         marginBottom: 20,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        fontSize: 20
+        borderRadius: 10
     },
-    shadow: {
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 5,
-        },
-        shadowOpacity: 0.5,
-        shadowRadius: 7,
-
+    letra: {
+        color: 'white',
         elevation: 15,
+        fontSize: 20
     },
     erro: {
         color: 'red'
     },
     titulo: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginLeft: 50
     },
     image: {
         flex: 1,
         justifyContent: "center",
         height: 780,
-        width: '100%'
-      },
+        width: '100%',
+
+    },
 });

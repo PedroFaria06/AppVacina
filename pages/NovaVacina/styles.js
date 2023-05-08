@@ -37,12 +37,11 @@ export default StyleSheet.create({
     },
     btnCadastrar: {
         marginTop: 50,
-        backgroundColor: 'green',
+        backgroundColor: '#37BD6D',
         textAlign: 'center',
         paddingVertical: 10,
         width: 150,
-        color: 'white',
-        fontSize: 15,
+        borderRadius: 10
     },
     btnComprovante: {
         backgroundColor: '#419ed7',
@@ -59,14 +58,9 @@ export default StyleSheet.create({
         color: 'white',
         fontSize: 15,
     },
-    sombra: {
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 5,
-        },
-        shadowOpacity: 0.5,
-        shadowRadius: 7,
-        elevation: 15,
+    letra: {
+        color: 'white',
+        fontSize: 20,
+        paddingLeft: 30
     }
 });

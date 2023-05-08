@@ -37,33 +37,22 @@ export default StyleSheet.create({
     },
     btnSalvar: {
         marginTop: 10,
-        backgroundColor: 'green',
+        backgroundColor: '#37BD6D',
         textAlign: 'center',
         paddingVertical: 10,
-        width: 150,
-        color: 'white',
-        fontSize: 15,
+        width: 170,
+        borderRadius: 10
     },
     btnExcluir: {
-        marginTop: 30,
-        backgroundColor: '#fc7879',
+        marginTop: 90,
+        backgroundColor: '#FD7979',
         textAlign: 'center',
         paddingVertical: 5,
-        width: 100,
-        color: 'white',
-        fontSize: 15,
-        shadowColor: 'black',
+        width: 90,
+        flexDirection: 'row',
+        borderRadius: 10
     },
-    sombra: {
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 5,
-        },
-        shadowOpacity: 0.5,
-        shadowRadius: 7,
-        elevation: 15,
-    },
+
     centeredView: {
         flex: 1,
         justifyContent: "center",
@@ -127,5 +116,15 @@ export default StyleSheet.create({
         color: 'white',
         fontSize: 15,
     },
-
+    letra: {
+        color: 'white',
+        fontSize: 20,
+        textAlign: 'center',
+    },
+    lixo: {
+        width: 17,
+        height: 17,
+        marginTop: 5,
+        marginRight: 5
+    },
 });

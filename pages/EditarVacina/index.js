@@ -178,18 +178,16 @@ export const EditarVacina = (props) => {
 
             </View>
 
-            <TouchableOpacity onPress={() => editarVacina()}>
-                <Text style={[styles.btnSalvar, styles.sombra]}>
-                    Salvar Alterações
-                </Text>
+            <TouchableOpacity style={styles.btnSalvar} onPress={() => editarVacina()}>
+                <Text style={styles.letra}>Salvar Alterações</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={() => setModalVisible(true)}>
-                <Text style={[styles.btnExcluir, styles.sombra]}>
-                    Excluir
-                </Text>
-            </TouchableOpacity>
-
+            <View>
+                <TouchableOpacity style={styles.btnExcluir} onPress={() => setModalVisible(true)}>
+                    <Image style={styles.lixo} source={require('../../assets/imgs/lixeira.png')} />
+                    <Text style={styles.letra}>Excluir</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     );
 }

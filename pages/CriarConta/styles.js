@@ -33,23 +33,17 @@ export default StyleSheet.create({
     },
     btnCadastrar: {
         marginTop: 120,
-        backgroundColor: 'green',
+        backgroundColor: '#37BD6D',
         textAlign: 'center',
         paddingVertical: 10,
         paddingHorizontal: 32,
-        width: 220,
+        width: 160,
+        borderRadius: 10
+
+    },
+    letra: {
         color: 'white',
         fontSize: 20,
-        shadowColor: 'black',
-    },
-    sombra: {
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 5,
-        },
-        shadowOpacity: 0.5,
-        shadowRadius: 7,
-        elevation: 15,
+        textAlign: 'center'
     }
 });

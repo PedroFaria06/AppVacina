@@ -6,15 +6,18 @@ export default StyleSheet.create({
         flex: 1
     },
     btnNovaVacina: {
-        backgroundColor: 'green',
+        backgroundColor: '#37BD6D',
         textAlign: 'center',
         paddingVertical: 10,
-        width: 180,
-        color: 'white',
-        marginTop: 40,
-        marginBottom: 20,
+        width: 140,
+        marginTop: 400,
         marginLeft: 'auto',
         marginRight: 'auto',
-        fontSize: 20,
+        borderRadius: 10
     },
+    letra: {
+        color: 'white',
+        fontSize: 20,
+        textAlign: 'center'
+    }
 });

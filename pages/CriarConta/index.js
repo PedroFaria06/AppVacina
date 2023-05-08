@@ -78,10 +78,8 @@ export const CriarConta = (props) => {
 
             </View>
 
-            <TouchableOpacity onPress={showLogin}>
-                <Text style={[styles.btnCadastrar, styles.sombra]}>
-                    Cadastrar
-                </Text>
+            <TouchableOpacity style={styles.btnCadastrar} onPress={showLogin}>
+                <Text style={styles.letra}>Cadastrar</Text>
             </TouchableOpacity>
 
         </View>
